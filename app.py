@@ -15,6 +15,7 @@ from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 
 # Init is ran on server startup
 def init():
+    #TEST
     global model
     global upsampler
 
