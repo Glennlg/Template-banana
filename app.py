@@ -24,7 +24,6 @@ def init():
     model_key = "realesr-general-x4v3"
     print("Init " + model_key)
     upsampler = upsamplers[model_key]
-    print(upsampler)
     modelModel = SRVGGNetCompact(**upsampler["initArgs"])
     opt_path = upsampler["path"]
     t = time.time()
@@ -77,7 +76,6 @@ def inference(all_inputs: dict) -> dict:
 
     model_id = "realesr-general-x4v3"
     upsampler = upsamplers[model_id]
-    print(upsampler)
     # Parse arguments
     img_byte_str = all_inputs.get('img_bytes', None)
 
